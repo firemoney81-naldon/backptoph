@@ -1,23 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  
+  <title>구슬이 서 말이라도 꿰어야 보배! 수십 개 사이트를 하나로 꿰어 드린 이사 비교 보물창고</title>
+
+  
+  
+  <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --primary-pastel: #e3f2fd;
+            --secondary-pastel: #fce4ec;
+            --accent-pastel: #f1f8e9;
+            --text-main: #2c3e50;
+            --text-muted: #546e7a;
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            word-break: keep-all;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+
+        .container { max-width: 1200px; margin: -40px auto 60px; padding: 0 20px; }
+
+        .category-section {
+            background: #fff;
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid #a1c4fd;
+            color: #455a64;
+            display: flex;
+            align-items: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .item-card {
+            background: var(--accent-pastel);
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid transparent;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            background: #fff;
+            border-color: #a1c4fd;
+        }
+
+        .item-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 20px;
+        }
+
+        .item-card .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1a237e;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .item-card .desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #eceff1;
+            color: #78909c;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>구슬이 서 말이라도 꿰어야 보배! 수십 개 사이트를 하나로 꿰어 드린 이사 비교 보물창고</h1>
+</header>
+
+<div class="container">
+    <section class="category-section" style="background-color: #fdfcf0;">
+        <h2 class="category-title">📍 지역별 검증된 이사 명당</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindh.withusgoat.com" target="_blank"><span class="title">창원포장이사추천</span><span class="desc">창원 지역에서 평점 1위를 기록한 이유가 있는 섬세한 패킹 서비스</span></a></div>
+            <div class="item-card"><a href="https://movingnkindm.withusgoat.com" target="_blank"><span class="title">관악구이사</span><span class="desc">복잡한 골목길도 문제없는 관악구 맞춤형 전문 드라이버 운용</span></a></div>
+            <div class="item-card"><a href="https://movingnkindo.withusgoat.com" target="_blank"><span class="title">전주포장이사추천</span><span class="desc">전주 비빔밥처럼 깔끔하고 정갈하게 짐을 정리해드리는 마법</span></a></div>
+            <div class="item-card"><a href="https://movingnkinds.withusgoat.com" target="_blank"><span class="title">마산이삿짐센터</span><span class="desc">마산 바다처럼 시원시원한 속도로 끝내는 완벽한 공간 이동</span></a></div>
+            <div class="item-card"><a href="https://movingnkindv.withusgoat.com" target="_blank"><span class="title">경기광주포장이사</span><span class="desc">경기도 광주의 지형적 특성을 완벽 이해한 베테랑 팀 구성</span></a></div>
+            <div class="item-card"><a href="https://movingokinde.withusgoat.com" target="_blank"><span class="title">광주광역시포장이사</span><span class="desc">호남권 최대 규모의 차량 인프라로 기다림 없는 즉시 배차</span></a></div>
+            <div class="item-card"><a href="https://movingokindj.withusgoat.com" target="_blank"><span class="title">의정부이사업체</span><span class="desc">의정부 부대찌개처럼 든든하고 만족스러운 이사 당일의 편안함</span></a></div>
+            <div class="item-card"><a href="https://movingokindy.withusgoat.com" target="_blank"><span class="title">오산이삿짐센터</span><span class="desc">오산 지역 맘카페가 극찬한 아기 짐 전문 케어 시스템</span></a></div>
+            <div class="item-card"><a href="https://movingpkindb.withusgoat.com" target="_blank"><span class="title">군포포장이사</span><span class="desc">군포 시민들의 입소문만으로 성장한 정직한 가격의 대표 업체</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #f0f7ff;">
+        <h2 class="category-title">🚛 짐 무게에 따른 스마트 견적</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindj.withusgoat.com" target="_blank"><span class="title">6톤이사비용</span><span class="desc">대형 가전이 많아도 6톤 트럭 한 대로 경제적인 이사 설계</span></a></div>
+            <div class="item-card"><a href="https://movingnkindz.withusgoat.com" target="_blank"><span class="title">7톤이사비용</span><span class="desc">애매한 짐 양을 위한 최적의 차량 조합으로 비용 거품 제거</span></a></div>
+            <div class="item-card"><a href="https://movingokindg.withusgoat.com" target="_blank"><span class="title">30평포장이사비용</span><span class="desc">국민 평수 30평대에 가장 최적화된 표준화 견적 가이드 제공</span></a></div>
+            <div class="item-card"><a href="https://movingpkindw.withusgoat.com" target="_blank"><span class="title">포장이사5톤</span><span class="desc">가장 대중적인 5톤 이사를 가장 특별한 서비스로 경험하세요</span></a></div>
+            <div class="item-card"><a href="https://movingqkindu.withusgoat.com" target="_blank"><span class="title">7.5톤이사</span><span class="desc">대가족 이사도 걱정 없는 광폭 적재함 보유 차량 투입</span></a></div>
+            <div class="item-card"><a href="https://movingqkindv.withusgoat.com" target="_blank"><span class="title">10톤이사비용</span><span class="desc">기업 이전 및 대형 단독주택을 위한 매머드급 이사 토탈 솔루션</span></a></div>
+            <div class="item-card"><a href="https://movingrkinda.withusgoat.com" target="_blank"><span class="title">2톤이사</span><span class="desc">미니멀리스트를 위한 가볍고 실속 있는 콤팩트 이사 플랜</span></a></div>
+            <div class="item-card"><a href="https://movingrkindm.withusgoat.com" target="_blank"><span class="title">포장이사금액</span><span class="desc">숨겨진 옵션비 없는 투명한 견적서로 이사 당일 얼굴 붉힐 일 제로</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #fff5f5;">
+        <h2 class="category-title">📦 잠시만 안녕, 프리미엄 보관</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindk.withusgoat.com" target="_blank"><span class="title">포장이사보관</span><span class="desc">입주 시기가 안 맞아도 걱정 끝, 항온항습 컨테이너 대기 중</span></a></div>
+            <div class="item-card"><a href="https://movingnkindl.withusgoat.com" target="_blank"><span class="title">인천보관이사</span><span class="desc">해풍 걱정 없는 인천 최대 규모 실내 창고 인프라 구축</span></a></div>
+            <div class="item-card"><a href="https://movingnkindq.withusgoat.com" target="_blank"><span class="title">부산보관이사비용</span><span class="desc">부산 전 지역 픽업 가능한 합리적인 일단위 보관 요금제</span></a></div>
+            <div class="item-card"><a href="https://movingokindq.withusgoat.com" target="_blank"><span class="title">분당보관이사</span><span class="desc">강남·분당 생활권 분들을 위한 고품격 보관 이사 전담팀</span></a></div>
+            <div class="item-card"><a href="https://movingpkindh.withusgoat.com" target="_blank"><span class="title">부산이사짐보관</span><span class="desc">곰팡이 걱정은 이제 그만! 24시간 철통 보안 스토리지 서비스</span></a></div>
+            <div class="item-card"><a href="https://movingpkindm.withusgoat.com" target="_blank"><span class="title">가전제품보관</span><span class="desc">예민한 OLED TV와 양문형 냉장고를 위한 특수 완충 보관 시스템</span></a></div>
+            <div class="item-card"><a href="https://movingpkindv.withusgoat.com" target="_blank"><span class="title">이삿짐보관서비스</span><span class="desc">내 집보다 더 쾌적하게 짐을 관리해드리는 5성급 호텔형 스토리지</span></a></div>
+            <div class="item-card"><a href="https://movingqkindt.withusgoat.com" target="_blank"><span class="title">컨테이너보관이사</span><span class="desc">견고한 해상용 컨테이너로 외부 충격과 습기를 완벽 차단</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #f3e5f5;">
+        <h2 class="category-title">🛣️ 전국 어디든, 경계 없는 이동</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindi.withusgoat.com" target="_blank"><span class="title">타지역이사</span><span class="desc">서울에서 제주까지, 지도를 가로지르는 숙련된 장거리 드라이버</span></a></div>
+            <div class="item-card"><a href="https://movingnkindx.withusgoat.com" target="_blank"><span class="title">지방이사</span><span class="desc">고속도로 통행료와 유류비를 포함한 정직한 전국구 고정 단가</span></a></div>
+            <div class="item-card"><a href="https://movingokindr.withusgoat.com" target="_blank"><span class="title">서울에서부산이사비용</span><span class="desc">대한민국 최대 노선, 서울-부산 구간 특화 연계 할인 시스템</span></a></div>
+            <div class="item-card"><a href="https://movingokindv.withusgoat.com" target="_blank"><span class="title">지방이사비용</span><span class="desc">먼 거리일수록 빛을 발하는 합리적인 이코노미 운송 솔루션</span></a></div>
+            <div class="item-card"><a href="https://movingpkindj.withusgoat.com" target="_blank"><span class="title">부산서울이사</span><span class="desc">수도권 진입의 꿈을 함께하는 가장 든든한 물류 파트너</span></a></div>
+            <div class="item-card"><a href="https://movingqkindc.withusgoat.com" target="_blank"><span class="title">부산에서서울이사</span><span class="desc">상행선 전문 차량 배차로 이삿짐 파손 위험도를 최소화</span></a></div>
+            <div class="item-card"><a href="https://movingrkindc.withusgoat.com" target="_blank"><span class="title">영주포장이사</span><span class="desc">소백산 자락 어디라도 달려가는 영주 지역 맞춤 이동 서비스</span></a></div>
+            <div class="item-card"><a href="https://movingrkinde.withusgoat.com" target="_blank"><span class="title">거제도이사</span><span class="desc">거가대교를 건너 섬마을 구석구석까지 찾아가는 정성 어린 서비스</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #e8f5e9;">
+        <h2 class="category-title">🏆 실패 없는 업체 선택 리스트</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindg.withusgoat.com" target="_blank"><span class="title">포장이사순위</span><span class="desc">실제 이용 고객들의 만족도 데이터를 기반으로 산출된 리얼 랭킹</span></a></div>
+            <div class="item-card"><a href="https://movingnkindw.withusgoat.com" target="_blank"><span class="title">이사짐센터순위</span><span class="desc">가격, 친절도, A/S 발생률을 종합 분석한 대한민국 TOP 10 업체</span></a></div>
+            <div class="item-card"><a href="https://movingokindt.withusgoat.com" target="_blank"><span class="title">이삿짐업체</span><span class="desc">오랜 전통과 노하우를 가진 베테랑들이 모인 장인 정신의 업체</span></a></div>
+            <div class="item-card"><a href="https://movingqkinds.withusgoat.com" target="_blank"><span class="title">이사짐센터비교</span><span class="desc">클릭 한 번으로 최대 3개 업체의 견적을 한눈에 비교하는 스마트 툴</span></a></div>
+            <div class="item-card"><a href="https://movingrkindi.withusgoat.com" target="_blank"><span class="title">이사허가업체</span><span class="desc">무허가 업체는 이제 그만! 국토부 정식 허가증을 보유한 안심 업체</span></a></div>
+            <div class="item-card"><a href="https://movingrkindn.withusgoat.com" target="_blank"><span class="title">이삿집센터</span><span class="desc">정겨운 이름만큼이나 이웃집 이사처럼 정성껏 짐을 옮겨드립니다</span></a></div>
+            <div class="item-card"><a href="https://movingrkindq.withusgoat.com" target="_blank"><span class="title">이사짐센타</span><span class="desc">기본에 충실한 이사, 짐 옮기기의 본질을 꿰뚫는 전문가 그룹</span></a></div>
+            <div class="item-card"><a href="https://movingrkindg.withusgoat.com" target="_blank"><span class="title">일반이사추천</span><span class="desc">포장만큼 정교한 일반 이사, 셀프 포장족을 위한 최고의 가성비</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #fffde7;">
+        <h2 class="category-title">⏳ 시간이 금! 특수 일정 서비스</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingokindc.withusgoat.com" target="_blank"><span class="title">하루보관이사</span><span class="desc">청소 시간이 부족한 당신을 위한 초단기 24시간 짐 보관 패키지</span></a></div>
+            <div class="item-card"><a href="https://movingokindd.withusgoat.com" target="_blank"><span class="title">오후이사</span><span class="desc">오전에 푹 자고 오후에 시작하는 여유로운 올빼미족 이사 플랜</span></a></div>
+            <div class="item-card"><a href="https://movingpkindx.withusgoat.com" target="_blank"><span class="title">야간이사</span><span class="desc">낮 업무가 바쁜 직장인을 위한 야간 비밀 작전 같은 신속한 이동</span></a></div>
+            <div class="item-card"><a href="https://movingnkindr.withusgoat.com" target="_blank"><span class="title">단지내이사비용</span><span class="desc">옆 동으로 가는데 비싼 돈 쓰지 마세요. 동선 맞춤형 초저가 견적</span></a></div>
+            <div class="item-card"><a href="https://movingnkindu.withusgoat.com" target="_blank"><span class="title">같은아파트이사</span><span class="desc">차량 이동 최소화, 인력 중심의 합리적인 아파트 단지 내 이동</span></a></div>
+            <div class="item-card"><a href="https://movingnkindp.withusgoat.com" target="_blank"><span class="title">대전사무실이사</span><span class="desc">비즈니스 중단 최소화! 대전 지역 기업 이전 전문 스페셜리스트</span></a></div>
+            <div class="item-card"><a href="https://movingpkindy.withusgoat.com" target="_blank"><span class="title">포장이사와일반이사</span><span class="desc">당신에게 맞는 이사 스타일은? 유형별 장단점 완벽 비교 가이드</span></a></div>
+            <div class="item-card"><a href="https://movingqkinda.withusgoat.com" target="_blank"><span class="title">이사카드결제</span><span class="desc">목돈 부담 없는 무이자 할부와 포인트 적립이 가능한 투명한 결제</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #f1f8e9;">
+        <h2 class="category-title">🏙️ 서울 도심 이사의 정석</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingokindh.withusgoat.com" target="_blank"><span class="title">송파구이삿짐센터</span><span class="desc">잠실 엘리트 단지부터 문정동 오피스텔까지 송파 전역 커버</span></a></div>
+            <div class="item-card"><a href="https://movingokindi.withusgoat.com" target="_blank"><span class="title">양천구이사</span><span class="desc">목동 교육구 특성을 반영한 도서 파손 제로 포장 시스템 가동</span></a></div>
+            <div class="item-card"><a href="https://movingpkindc.withusgoat.com" target="_blank"><span class="title">서울이사업체</span><span class="desc">천만 시민의 발이 되어온 서울 대표 이사 브랜드 총집합</span></a></div>
+            <div class="item-card"><a href="https://movingpkinde.withusgoat.com" target="_blank"><span class="title">성북구이사업체</span><span class="desc">고지대와 좁은 골목이 많은 성북구 특화 소형 사다리차 상시 대기</span></a></div>
+            <div class="item-card"><a href="https://movingqkindb.withusgoat.com" target="_blank"><span class="title">광진구이사</span><span class="desc">한강변 고층 아파트 전문 풍압 안전 사다리차 작업 지원</span></a></div>
+            <div class="item-card"><a href="https://movingqkindf.withusgoat.com" target="_blank"><span class="title">동작구이사</span><span class="desc">노량진부터 사당까지, 동작구 지름길을 꿰뚫고 있는 빠른 배송</span></a></div>
+            <div class="item-card"><a href="https://movingqkindj.withusgoat.com" target="_blank"><span class="title">구로구이삿짐센터</span><span class="desc">G밸리 IT 직장인들을 위한 야간/주말 특화 오피스텔 이사팀</span></a></div>
+            <div class="item-card"><a href="https://movingqkindz.withusgoat.com" target="_blank"><span class="title">강남구이사</span><span class="desc">강남의 품격에 맞는 화이트 장갑 서비스와 고가 가구 전담 포장</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #fafafa;">
+        <h2 class="category-title">🌊 영남권 이사 대백과</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindt.withusgoat.com" target="_blank"><span class="title">대구이삿짐센터추천</span><span class="desc">대구의 뜨거운 열기보다 더 뜨거운 열정으로 짐을 나릅니다</span></a></div>
+            <div class="item-card"><a href="https://movingokindn.withusgoat.com" target="_blank"><span class="title">영도이사</span><span class="desc">부산 영도의 가파른 언덕길도 평지처럼 이동하는 베테랑의 기술</span></a></div>
+            <div class="item-card"><a href="https://movingpkindg.withusgoat.com" target="_blank"><span class="title">포항이사비용</span><span class="desc">포항 제철의 단단함처럼 무거운 짐도 흔들림 없이 운송합니다</span></a></div>
+            <div class="item-card"><a href="https://movingpkindn.withusgoat.com" target="_blank"><span class="title">대구이사짐보관</span><span class="desc">대구 경북 지역 최대 규모의 최첨단 보안 시스템 보관 창고</span></a></div>
+            <div class="item-card"><a href="https://movingpkindo.withusgoat.com" target="_blank"><span class="title">대구이삿짐센터가격비교</span><span class="desc">수성구부터 달성군까지, 대구 전역 업체 가격을 실시간으로</span></a></div>
+            <div class="item-card"><a href="https://movingpkindq.withusgoat.com" target="_blank"><span class="title">달서구이사</span><span class="desc">대구 최대 인구 밀집 지역 달서구 맞춤형 빠른 이사 서비스</span></a></div>
+            <div class="item-card"><a href="https://movingqkindd.withusgoat.com" target="_blank"><span class="title">정관포장이사</span><span class="desc">정관 신도시 입주민들이 인정한 젊고 세련된 감각의 이사팀</span></a></div>
+            <div class="item-card"><a href="https://movingrkindl.withusgoat.com" target="_blank"><span class="title">진주시이삿짐센터</span><span class="desc">진주의 역사를 나르듯 소중한 가구 하나하나를 보물처럼 케어</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #fce4ec;">
+        <h2 class="category-title">🌳 중부권 핵심 이사 정보</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingokindf.withusgoat.com" target="_blank"><span class="title">오창이사</span><span class="desc">오창 과학단지 연구원들이 신뢰하는 정밀 기기 운송 전문 업체</span></a></div>
+            <div class="item-card"><a href="https://movingokindu.withusgoat.com" target="_blank"><span class="title">대전포장이사추천</span><span class="desc">대전 성심당만큼 유명해지고 싶은 대전의 친절 끝판왕 업체</span></a></div>
+            <div class="item-card"><a href="https://movingpkindl.withusgoat.com" target="_blank"><span class="title">대전반포장이사</span><span class="desc">알뜰한 대전 시민을 위한 실속형 반포장 이사 패키지 출시</span></a></div>
+            <div class="item-card"><a href="https://movingpkindp.withusgoat.com" target="_blank"><span class="title">대전이삿짐보관</span><span class="desc">대전 도심 내 위치하여 접근성이 뛰어난 안심 물류 센터</span></a></div>
+            <div class="item-card"><a href="https://movingpkindt.withusgoat.com" target="_blank"><span class="title">천안보관이사</span><span class="desc">천안 아산 지역의 급증하는 보관 수요를 책임지는 대형 창고</span></a></div>
+            <div class="item-card"><a href="https://movingpkindu.withusgoat.com" target="_blank"><span class="title">천안이사짐센터</span><span class="desc">사통팔달 천안의 지리적 이점을 살린 초고속 전국 연결망</span></a></div>
+            <div class="item-card"><a href="https://movingqkindo.withusgoat.com" target="_blank"><span class="title">여수이삿짐센터</span><span class="desc">여수 밤바다의 낭만을 깨지 않는 조용하고 깔끔한 이사 매너</span></a></div>
+            <div class="item-card"><a href="https://movingqkindy.withusgoat.com" target="_blank"><span class="title">구미이삿짐센터</span><span class="desc">구미 공단 직장인들을 위한 신속 정확한 맞춤 스케줄링</span></a></div>
+        </div>
+    </section>
+
+    <section class="category-section" style="background-color: #e0f2f1;">
+        <h2 class="category-title">💡 이사 전 반드시 읽어봐야 할 팁</h2>
+        <div class="grid-container">
+            <div class="item-card"><a href="https://movingnkindn.withusgoat.com" target="_blank"><span class="title">이삿짐센터견적</span><span class="desc">방문 견적 전, 사진 몇 장으로 대략적인 금액을 확인하는 법</span></a></div>
+            <div class="item-card"><a href="https://movingokindw.withusgoat.com" target="_blank"><span class="title">이사견적서</span><span class="desc">바가지 요금 피하려면? 견적서에 반드시 포함되어야 할 5가지</span></a></div>
+            <div class="item-card"><a href="https://movingokindx.withusgoat.com" target="_blank"><span class="title">이사무료견적</span><span class="desc">부담 없이 신청하세요. 상담만 받아도 이사 체크리스트 증정</span></a></div>
+            <div class="item-card"><a href="https://movingpkinda.withusgoat.com" target="_blank"><span class="title">이사반포장</span><span class="desc">포장은 내가, 운반은 전문가가! 합리적인 비용 절감의 기술</span></a></div>
+            <div class="item-card"><a href="https://movingpkindz.withusgoat.com" target="_blank"><span class="title">포장이사주의사항</span><span class="desc">귀중품 관리부터 가전 설치 확인까지, 당일 체크리스트 완벽판</span></a></div>
+            <div class="item-card"><a href="https://movingrkindo.withusgoat.com" target="_blank"><span class="title">일반이사가격</span><span class="desc">가장 저렴한 이사를 찾으시나요? 일반 이사 비용의 표준 단가표</span></a></div>
+            <div class="item-card"><a href="https://movingrkindp.withusgoat.com" target="_blank"><span class="title">이사비용문의</span><span class="desc">궁금한 건 못 참아! 24시간 카카오톡 실시간 비용 상담 채널</span></a></div>
+            <div class="item-card"><a href="https://movingrkindj.withusgoat.com" target="_blank"><span class="title">아파트포장이사</span><span class="desc">엘리베이터 보양부터 이웃 민원 방지까지, 아파트 이사의 정석</span></a></div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 스마트 무빙 가이드 - 대한민국 모든 이사를 연결하다.</p>
+    <p>본 페이지의 정보는 사용자에게 최적의 이사 서비스를 추천하기 위해 구성되었습니다.</p>
+</footer>
+
+</body>
 </html>
